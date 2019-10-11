@@ -1,0 +1,13 @@
+canvas {
+    border : 1px solid black;
+
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
+#main-container {
+    display: block;
+    background-color:#f9f9f9;
+}

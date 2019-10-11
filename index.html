@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  charset="utf-8" />
+    <link rel="stylesheet" href="src/css/style.css" type="text/css" media="screen" />
+    <title>Game of life</title>
+    <!-- UIkit JS -->
+    <link rel="stylesheet" href="src/css/uikit.min.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="src/js/uikit.min.js"></script>
+    <script type="text/javascript" src="src/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <section class="uk-section uk-margin uk-margin-remove-bottom">
+      <div class="uk-container uk-container-small">
+        <div class="uk-card uk-margin uk-card-large uk-card-default uk-card-body uk-box-shadow-large" id="main-container">
+          <h1 align="center">John Conway's Game of Life</h1><br>
+          <p uk-margin>
+            <button id="startButton" class="uk-button uk-button-default uk-button-large">start</button>
+            <button id="stopButton" class="uk-button uk-button-default uk-button-large">stop</button>
+            <button id="randButton" class="uk-button uk-button-default uk-button-large">Random population</button>
+            <button id="resetButton" class="uk-button uk-button-default uk-button-large uk-align-right">reset</button>
+          </p>
+          <canvas id="zone"></canvas>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript" src="src/js/drawing.js"></script>
+  <script type="text/javascript" src="src/js/init.js"></script>
+</html> 
+
+<style>
+  .uk-button {
+      color: #122753;
+      outline-color: #122753;
+      outline-width: 5px
+  }
+
+  .uk-button:hover {
+      background-color: #122753;
+      color: #ffffff
+  }
+</style>
